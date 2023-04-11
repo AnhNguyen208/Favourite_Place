@@ -29,38 +29,11 @@
   <section class="py-5">
     <div class="text-center text-white">
       <input style="height: 45px;width: 300px;" type="search" id="site-search">
-      <button  style="height: 45px;width: 60px;">Search</button>
+      <button class="btn btn-dark">Search</button>
     </div>
     <div class="container px-4 px-lg-5 mt-5">
       <div id="myData" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-        <script>
-          fetch('place.json')
-            .then(function (response) {
-              return response.json();
-            })
-            .then(function (data) {
-              append(data);
-            })
-            .catch(function (err) {
-              console.log('error: ' + err);
-            });
-
-          function append(data) {
-            var mainContainer = document.getElementById('myData');
-            for (var i = 0; i < data.length; i++) {
-              mainContainer.innerHTML += `<div class="col mb-5">
-                                            <div class="card h-100">
-                                              <img class="card-img-top" src="${data[i].image}" alt="..." />
-                                              <div class="card-body p-4">
-                                                <div class="text-center">
-                                                  <h5 class="fw-bolder" style="height:50px">${data[i].name}</h5>
-                                                  ${data[i].type}
-                                                </div>
-                                              </div>
-                                          </div>`;
-            }
-          }
-        </script>
+        <script src="app.js"></script>
       </div>
     </div>
 
