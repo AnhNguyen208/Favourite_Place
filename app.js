@@ -1,9 +1,25 @@
+const search = document.getElementById('site-search');
+let places = [];
+
+search.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase();
+
+
+    const filteredPlace = places.filter((place) => {
+        return place.name.toLowerCase().includes(searchString);
+    });
+    append(filteredPlace);
+
+});
+
+
 fetch('place.json')
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
-        append(data);
+        places = data;
+        append(places);
     })
     .catch(function (err) {
         console.log('error: ' + err);
@@ -11,6 +27,7 @@ fetch('place.json')
 
 function append(data) {
     var mainContainer = document.getElementById('myData');
+    mainContainer.innerHTML = '';
     for (var i = 0; i < data.length; i++) {
         mainContainer.innerHTML += `<div class="col mb-5">
                                             <div class="card h-100">
