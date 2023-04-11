@@ -1,0 +1,75 @@
+[
+    {
+        "id": "1",
+        "name": "Hanoi Museum",
+        "type": "Museum",
+        "image": "images/museum1.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Hoa Lo Prison Museum",
+        "type": "Museum",
+        "image": "images/museum2.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Vietnam National Fine Arts Museum",
+        "type": "Museum",
+        "image": "images/museum3.jpg"
+    },
+    {
+        "id": "4",
+        "name": "La Maison 1888",
+        "type": "Restaurant",
+        "image": "images/restaurant1.jpg"
+    },
+    {
+        "id": "5",
+        "name": "L’Escale",
+        "type": "Restaurant",
+        "image": "images/restaurant2.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Jardin Des Sens",
+        "type": "Restaurant",
+        "image": "images/restaurant3.jpg"
+    },
+    {
+        "id": "7",
+        "name": "La Terrasse",
+        "type": "Coffee Shop",
+        "image": "images/coffeeShop1.jpg"
+    },
+    {
+        "id": "8",
+        "name": "An Garden Cafe",
+        "type": "Coffee Shop",
+        "image": "images/coffeeShop2.jpg"
+    },
+    {
+        "id": "9",
+        "name": "Xofa Café & Bistro",
+        "type": "Coffee Shop",
+        "image": "images/coffeeShop3.jpg"
+    },
+    {
+        "id": "10",
+        "name": "Nê.Cocktailbar",
+        "type": "Pub",
+        "image": "images/pub1.jpg"
+    },
+    {
+        "id": "11",
+        "name": "The Haflington ",
+        "type": "Pub",
+        "image": "images/pub2.jpg"
+    },
+    {
+        "id": "12",
+        "name": "The Den Bar",
+        "type": "Pub",
+        "image": "images/pub3.jpg"
+    }
+    
+]
