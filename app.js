@@ -4,7 +4,6 @@ let places = [];
 search.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
 
-
     const filteredPlace = places.filter((place) => {
         return place.name.toLowerCase().includes(searchString);
     });
@@ -39,5 +38,32 @@ function append(data) {
                                                 </div>
                                               </div>
                                           </div>`;
+    }
+}
+
+function categoryChange() {
+    var category = document.getElementById("category").value;
+    if (category == 1) {
+        const filteredPlace = places.filter((place) => {
+            return place.type == "Museum";
+        });
+        append(filteredPlace);
+    } else if (category == 2) {
+        const filteredPlace = places.filter((place) => {
+            return place.type == "Restaurant";
+        });
+        append(filteredPlace);
+    } else if (category == 3) {
+        const filteredPlace = places.filter((place) => {
+            return place.type == "Pub";
+        });
+        append(filteredPlace);
+    } else if (category == 4) {
+        const filteredPlace = places.filter((place) => {
+            return place.type == "Coffee Shop";
+        });
+        append(filteredPlace);
+    } else {
+        append(places);
     }
 }
